@@ -16,14 +16,32 @@ const NavigationBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link>
-                   <Link to="/">Home</Link>
+              <Link to="/">Home</Link>
             </Nav.Link>
             <Nav.Link>
-                    <Link to="/about">About</Link>
+              <Link to="/about">About</Link>
             </Nav.Link>
             <Nav.Link>
-                    <Link to="/contact">Contact Us</Link>
+              <Link to="/contact">Contact Us</Link>
             </Nav.Link>
+            <NavDropdown title="Hooks" id="basic-nav-dropdown">
+              <NavDropdown.Item>
+                <Link to="/classState">
+                  Class Use State
+                </Link>
+              </NavDropdown.Item>
+              
+              <NavDropdown.Item>
+                <Link to="/functionalUseState">
+                  Functional Use State
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/basicFormHandling">
+                  Basic Form Handling
+                </Link>
+              </NavDropdown.Item>
+            </NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>
