@@ -41,6 +41,31 @@ const NavigationBar = () => {
                   Basic Form Handling
                 </Link>
               </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/FormHandlingUsingTwoComponents">
+                FormHandlingUsingTwoComponents
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/Timer">
+                Timer Using effect
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/UseRefTimer">
+                counter using ref
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/UseRefUseStateStopWatch">
+                Stop Watch Using Use Ref Use State
+                </Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to="/UseReducerIncrementDecrement">
+                IncrementDecrement value using useReducer
+                </Link>
+              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
