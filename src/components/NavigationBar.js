@@ -1,7 +1,3 @@
-// import Container from 'react-bootstrap/Container';
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import {Container,Nav ,Navbar, NavDropdown} from "react-bootstrap";
 import {Link} from "react-router-dom";
@@ -9,9 +5,9 @@ import {Link} from "react-router-dom";
 const NavigationBar = () => {
   return (
     <>
-      <Navbar expand="lg" className="bg-warning">
+      <Navbar expand="lg" className="bg-dark p-4">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home"><h1 className="text-light">FRANKLIN ASPERO</h1></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -22,51 +18,14 @@ const NavigationBar = () => {
               <Link to="/about">About</Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact">Contact</Link>
             </Nav.Link>
-            <NavDropdown title="Hooks" id="basic-nav-dropdown">
-              <NavDropdown.Item>
-                <Link to="/classState">
-                  Class Use State
-                </Link>
-              </NavDropdown.Item>
-              
-              <NavDropdown.Item>
-                <Link to="/functionalUseState">
-                  Functional Use State
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link to="/basicFormHandling">
-                  Basic Form Handling
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link to="/FormHandlingUsingTwoComponents">
-                FormHandlingUsingTwoComponents
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link to="/Timer">
-                Timer Using effect
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link to="/UseRefTimer">
-                counter using ref
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link to="/UseRefUseStateStopWatch">
-                Stop Watch Using Use Ref Use State
-                </Link>
-              </NavDropdown.Item>
-              <NavDropdown.Item>
-                <Link to="/UseReducerIncrementDecrement">
-                IncrementDecrement value using useReducer
-                </Link>
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link>
+              <Link to="/skills">Skills</Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link to="/projects">Projects</Link>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
